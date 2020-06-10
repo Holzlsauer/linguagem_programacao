@@ -8,11 +8,11 @@ int main() {
     int array[length];
     srand(time(0));
 
+    printf("Unsorted array: ");
     for (int i = 0; i < length; i++) {
         array[i] = rand()%10;
         printf("%d ", array[i]);
     }
-    printf("\n");
 
     for (int j = 1; j < length-1; j++) {
         for (int i = 0; i < length-j; i++) {
@@ -22,8 +22,9 @@ int main() {
                 array[i] = tmp;
             }
         }
-    }
-
+    }    
+    
+    printf("\nSorted array:   ");
     for (int i = 0; i < length; i++) {
         printf("%d ", array[i]);
     }
