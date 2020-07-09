@@ -14,7 +14,7 @@ int main() {
     for (short int i = 0; i < sizeof(array)/sizeof(array[0]); i++) {
         printf("Posição %d: %d\n", i, array[i]);
         printf("Ponteiro %p conteúdo: %d\n\n", arrayPtr, *arrayPtr);
-        arrayPtr++; // Incrementa o ponteiro, "movendo-o 4 bits para frente"
+        arrayPtr++; // Incrementa o ponteiro, movendo-o uma posição para frente na memória
     }
 
     return 0;
